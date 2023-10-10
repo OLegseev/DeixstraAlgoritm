@@ -1,0 +1,198 @@
+﻿<Page x:Class="WpfApp3.Matrix"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp3"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800" Background="White"
+      Title="Matrix">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="38*"/>
+            <RowDefinition Height="38*"/>
+            <RowDefinition Height="38*"/>
+            <RowDefinition Height="38*"/>
+            <RowDefinition Height="38*"/>
+            <RowDefinition Height="38*"/>
+            <RowDefinition Height="38*"/>
+            <RowDefinition Height="38*"/>
+            <RowDefinition Height="38*"/>
+            <RowDefinition Height="38*"/>
+            <RowDefinition Height="38*"/>
+            <RowDefinition Height="37*"/>
+            <RowDefinition Height="*"/>
+
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Column="1"  Grid.Row="1" Text="" Background="Bisque"  />
+        <TextBlock Grid.Column="1"  Grid.Row="1" Text="1Start point" Background="Bisque" Grid.ColumnSpan="2" Margin="66,0,0,0"/>
+        <TextBlock Grid.Column="3"  Grid.Row="1" Text="2" Background="Bisque" Grid.ColumnSpan="2" Margin="0,0,66,0"/>
+        <TextBlock Grid.Column="4"  Grid.Row="1" Text="3" Background="Bisque"/>
+        <TextBlock Grid.Column="4"  Grid.Row="1" Text="4" Background="Bisque" Grid.ColumnSpan="2" Margin="66,0,0,0"/>
+        <TextBlock Grid.Column="6"  Grid.Row="1" Text="5" Background="Bisque" Grid.ColumnSpan="2" Margin="0,0,66,0"/>
+        <TextBlock Grid.Column="7"  Grid.Row="1" Text="6" Background="Bisque"/>
+        <TextBlock Grid.Column="7"  Grid.Row="1" Text="7" Background="Bisque" Grid.ColumnSpan="2" Margin="66,0,0,0"/>
+        <TextBlock Grid.Column="9"  Grid.Row="1" Text="8" Background="Bisque" Grid.ColumnSpan="2" Margin="0,0,66,0"/>
+        <TextBlock Grid.Column="10"  Grid.Row="1" Text="9" Background="Bisque"/>
+        <TextBlock Grid.Column="10"  Grid.Row="1" Text="10" Background="Bisque" Grid.ColumnSpan="2" Margin="66,0,0,0"/>
+        <TextBlock Grid.Column="1"  Grid.Row="2" Text="1Start point" Background="Bisque"/>
+        <TextBlock Grid.Column="1"  Grid.Row="2" Text="2" Background="Bisque" Margin="0,37,0,0" Grid.RowSpan="2"/>
+        <TextBlock Grid.Column="1"  Grid.Row="4" Text="3" Background="Bisque" Margin="0,0,0,37" Grid.RowSpan="2"/>
+        <TextBlock Grid.Column="1"  Grid.Row="5" Text="4" Background="Bisque"/>
+        <TextBlock Grid.Column="1"  Grid.Row="6" Text="5" Background="Bisque"/>
+        <TextBlock Grid.Column="1"  Grid.Row="6" Text="6" Background="Bisque" Margin="0,37,0,0" Grid.RowSpan="2"/>
+        <TextBlock Grid.Column="1"  Grid.Row="8" Text="7" Background="Bisque" Margin="0,0,0,37" Grid.RowSpan="2"/>
+        <TextBlock Grid.Column="1"  Grid.Row="9" Text="8" Background="Bisque"/>
+        <TextBlock Grid.Column="1"  Grid.Row="10" Text="9" Background="Bisque"/>
+        <TextBlock Grid.Column="1"  Grid.Row="10" Text="10" Background="Bisque" Margin="0,37,0,0" Grid.RowSpan="3"/>
+
+
+        <TextBlock Grid.Column="1"  Grid.Row="2" Text="0" FontWeight="Bold" FontStretch="Expanded" Background="Brown" Grid.ColumnSpan="2" Margin="66,0,0,0"/>
+        <TextBlock Grid.Column="3"  Grid.Row="2" Text="0" FontWeight="Bold" FontStretch="Expanded" Background="Brown" Grid.ColumnSpan="2" Margin="0,37,66,0" Grid.RowSpan="2"/>
+        <TextBlock Grid.Column="4"  Grid.Row="4" Text="0" FontWeight="Bold" FontStretch="Expanded" Background="Brown" Margin="0,0,0,37" Grid.RowSpan="2"/>
+        <TextBlock Grid.Column="4"  Grid.Row="5" Text="0" FontWeight="Bold" FontStretch="Expanded" Background="Brown" Grid.ColumnSpan="2" Margin="66,0,0,0"/>
+        <TextBlock Grid.Column="6"  Grid.Row="6" Text="0" FontWeight="Bold" FontStretch="Expanded" Background="Brown" Grid.ColumnSpan="2" Margin="0,0,66,0"/>
+        <TextBlock Grid.Column="7"  Grid.Row="6" Text="0" FontWeight="Bold" FontStretch="Expanded" Background="Brown" Margin="0,37,0,0" Grid.RowSpan="2"/>
+        <TextBlock Grid.Column="7"  Grid.Row="8" Text="0" FontWeight="Bold" FontStretch="Expanded" Background="Brown" Grid.ColumnSpan="2" Margin="66,0,0,37" Grid.RowSpan="2"/>
+        <TextBlock Grid.Column="9"  Grid.Row="9" Text="0" FontWeight="Bold" FontStretch="Expanded" Background="Brown" Grid.ColumnSpan="2" Margin="0,0,66,0"/>
+        <TextBlock Grid.Column="10"  Grid.Row="10" Text="0" FontWeight="Bold" FontStretch="Expanded" Background="Brown"/>
+        <TextBlock Grid.Column="10"  Grid.Row="10" Text="0" FontWeight="Bold" FontStretch="Expanded" Background="Brown" Grid.ColumnSpan="2" Margin="66,37,0,0" Grid.RowSpan="3"/>
+
+        <!--<TextBox Grid.Column="1"  Grid.Row="4" Grid.ColumnSpan="2" Margin="66,0,0,37" Grid.RowSpan="2" />
+        <TextBox Grid.Column="1"  Grid.Row="5" Grid.ColumnSpan="2" Margin="66,0,0,0" />
+        <TextBox Grid.Column="1"  Grid.Row="6" Grid.ColumnSpan="2" Margin="66,0,0,0" />
+        <TextBox Grid.Column="1"  Grid.Row="6" Grid.ColumnSpan="2" Margin="66,37,0,0" Grid.RowSpan="2" />
+        <TextBox Grid.Column="1"  Grid.Row="8" Grid.ColumnSpan="2" Margin="66,0,0,37" Grid.RowSpan="2" />
+        <TextBox Grid.Column="1"  Grid.Row="9" Grid.ColumnSpan="2" Margin="66,0,0,0" />
+        <TextBox Grid.Column="1"  Grid.Row="10" Grid.ColumnSpan="2" Margin="66,0,0,0" />
+        <TextBox Grid.Column="1"  Grid.Row="10" Grid.ColumnSpan="2" Margin="66,37,0,0" Grid.RowSpan="3" />
+        <TextBox Grid.Column="3"  Grid.Row="2" Grid.ColumnSpan="2" Margin="0,0,66,0" />
+        <TextBox Grid.Column="1"  Grid.Row="4" Grid.ColumnSpan="2" Margin="66,0,0,37" Grid.RowSpan="2" />
+        <TextBox Grid.Column="1"  Grid.Row="5" Grid.ColumnSpan="2" Margin="66,0,0,0" />
+        <TextBox Grid.Column="1"  Grid.Row="6" Grid.ColumnSpan="2" Margin="66,0,0,0" />
+        <TextBox Grid.Column="1"  Grid.Row="6" Grid.ColumnSpan="2" Margin="66,37,0,0" Grid.RowSpan="2" />
+        <TextBox Grid.Column="1"  Grid.Row="8" Grid.ColumnSpan="2" Margin="66,0,0,37" Grid.RowSpan="2" />
+        <TextBox Grid.Column="1"  Grid.Row="9" Grid.ColumnSpan="2" Margin="66,0,0,0" />
+        <TextBox Grid.Column="1"  Grid.Row="10" Grid.ColumnSpan="2" Margin="66,0,0,0" />
+        <TextBox Grid.Column="1"  Grid.Row="10" Grid.ColumnSpan="2" Margin="66,37,0,0" Grid.RowSpan="3" />-->
+
+
+
+
+
+
+
+
+
+
+        <TextBox x:Name="df111" Grid.Column="1"  Grid.Row="2"  Text="0" Grid.ColumnSpan="2" HorizontalAlignment="Right" Margin="0,37,0,0" Grid.RowSpan="2" Width="67" TextChanged="df_TextChanged"    />
+        <TextBox x:Name="df112" Grid.Column="1"  Grid.Row="4" Grid.ColumnSpan="2" Margin="66,0,0,37" Grid.RowSpan="2" Text="0" TextChanged="df_TextChanged"/>
+        <TextBox  x:Name="df113" Grid.Column="1"  Grid.Row="5" Grid.ColumnSpan="2" Margin="66,0,0,0" Text="0" TextChanged="df3_TextChanged" />
+        <TextBox x:Name="df114"  Grid.Column="1"  Grid.Row="6" Grid.ColumnSpan="2" Margin="66,0,0,0" Text="0" />
+        <TextBox x:Name="df115"  Grid.Column="1"  Grid.Row="6" Grid.ColumnSpan="2" Margin="66,0,0,0" Grid.RowSpan="2" Height="38" VerticalAlignment="Bottom" Text="0" />
+        <TextBox x:Name="df116"  Grid.Column="1"  Grid.Row="8" Grid.ColumnSpan="2" Margin="66,0,0,37" Grid.RowSpan="2" Text="0" />
+        <TextBox x:Name="df117"  Grid.Column="1"  Grid.Row="9" Grid.ColumnSpan="2" Margin="66,0,0,0" Text="0" />
+        <TextBox x:Name="df118"  Grid.Column="1"  Grid.Row="10" Grid.ColumnSpan="2" Margin="66,0,0,0" Text="0" />
+        <TextBox x:Name="df119"  Grid.Column="1"  Grid.Row="10" Grid.ColumnSpan="2" Margin="66,37,0,0" Grid.RowSpan="3" Text="0" />
+        <TextBox x:Name="df211"  Grid.Column="3"  Grid.Row="2" Grid.ColumnSpan="2" Margin="0,0,66,0" Text="0" />
+        <TextBox x:Name="df121"  Grid.Column="3"  Grid.Row="4" Grid.ColumnSpan="2" Margin="0,0,66,37" Grid.RowSpan="2" Text="0" />
+        <TextBox x:Name="df122"  Grid.Column="3"  Grid.Row="5" Grid.ColumnSpan="2" Margin="0,0,66,0" Text="0" />
+        <TextBox x:Name="df123"  Grid.Column="3"  Grid.Row="6" Grid.ColumnSpan="2" Margin="0,0,66,0" Text="0" />
+        <TextBox x:Name="df124"  Grid.Column="3"  Grid.Row="6" Grid.ColumnSpan="2" Margin="0,37,66,0" Grid.RowSpan="2" Text="0" />
+        <TextBox x:Name="df125"  Grid.Column="3"  Grid.Row="8" Grid.ColumnSpan="2" Margin="0,0,66,37" Grid.RowSpan="2"  Text="0" />
+        <TextBox x:Name="df126"  Grid.Column="3"  Grid.Row="9" Grid.ColumnSpan="2" Margin="0,0,66,0" Text="0" />
+        <TextBox x:Name="df127"  Grid.Column="3"  Grid.Row="10" Grid.ColumnSpan="2" Margin="0,0,66,0" Text="0" />
+        <TextBox x:Name="df128"  Grid.Column="3"  Grid.Row="10" Grid.ColumnSpan="2" Margin="0,37,66,0" Grid.RowSpan="3" Text="0" />
+        <TextBox x:Name="df212"  Grid.Column="4"  Grid.Row="2" Text="0" />
+        <TextBox  x:Name="df221" Grid.Column="4"  Grid.Row="2" Margin="0,37,0,0" Grid.RowSpan="2" Text="0" />
+        <TextBox x:Name="df131"  Grid.Column="4"  Grid.Row="5" Text="0" />
+        <TextBox x:Name="df132"  Grid.Column="4"  Grid.Row="6" Text="0" />
+        <TextBox x:Name="df133"  Grid.Column="4"  Grid.Row="6" Margin="0,37,0,0" Grid.RowSpan="2" Text="0" />
+        <TextBox x:Name="df134"  Grid.Column="4"  Grid.Row="8" Margin="0,0,0,37" Grid.RowSpan="2" Text="0" />
+        <TextBox x:Name="df135"  Grid.Column="4"  Grid.Row="9"  Text="0" />
+        <TextBox x:Name="df136"  Grid.Column="4"  Grid.Row="10" Text="0" />
+        <TextBox x:Name="df137"  Grid.Column="4"  Grid.Row="10" Margin="0,37,0,0" Grid.RowSpan="3" Text="0" />
+        <TextBox  x:Name="df213" Grid.Column="4"  Grid.Row="2" Grid.ColumnSpan="2" Margin="66,0,0,0" Text="0" />
+        <TextBox x:Name="df231"  Grid.Column="4"  Grid.Row="4" Grid.ColumnSpan="3" Margin="66,0,66,37" Grid.RowSpan="2" Text="0" />
+        <TextBox x:Name="df222"  Grid.Column="4"  Grid.Row="2" Grid.ColumnSpan="2" Margin="66,37,0,0" Grid.RowSpan="2" Text="0" />
+        <TextBox  x:Name="df141" Grid.Column="4"  Grid.Row="6" Grid.ColumnSpan="2" Margin="66,0,0,0" Text="0" />
+        <TextBox x:Name="df142"  Grid.Column="4"  Grid.Row="6" Grid.ColumnSpan="2" Margin="66,37,0,0" Grid.RowSpan="2" Text="0" />
+        <TextBox x:Name="df143"  Grid.Column="4"  Grid.Row="8" Grid.ColumnSpan="2" Margin="66,0,0,37" Grid.RowSpan="2" Text="0" />
+        <TextBox x:Name="df144"  Grid.Column="4"  Grid.Row="9" Grid.ColumnSpan="2" Margin="66,0,0,0" Text="0" />
+        <TextBox x:Name="df145"  Grid.Column="4"  Grid.Row="10" Grid.ColumnSpan="2" Margin="66,0,0,0" Text="0" />
+        <TextBox  x:Name="df146" Grid.Column="4"  Grid.Row="10" Grid.ColumnSpan="2" Margin="66,37,0,0" Grid.RowSpan="3" Text="0" />
+        <TextBox  x:Name="df214" Grid.Column="6"  Grid.Row="2" Grid.ColumnSpan="2" Margin="0,0,66,0"  Text="0" />
+        <TextBox x:Name="df232"  Grid.Column="6"  Grid.Row="4" Grid.ColumnSpan="2" Margin="0,0,66,37" Grid.RowSpan="2" Text="0" />
+        <TextBox  x:Name="df241" Grid.Column="6"  Grid.Row="5" Grid.ColumnSpan="2" Margin="0,0,66,0" Text="0" />
+        <TextBox  x:Name="df223" Grid.Column="6"  Grid.Row="2" Grid.ColumnSpan="2" Margin="0,37,66,0" Grid.RowSpan="2" Text="0" />
+        <TextBox x:Name="df151"  Grid.Column="6"  Grid.Row="6" Grid.ColumnSpan="2" Margin="0,37,66,0" Grid.RowSpan="2" Text="0" />
+        <TextBox x:Name="df152"  Grid.Column="6"  Grid.Row="8" Grid.ColumnSpan="2" Margin="0,0,66,37" Grid.RowSpan="2" Text="0" />
+        <TextBox x:Name="df153"  Grid.Column="6"  Grid.Row="9" Grid.ColumnSpan="2" Margin="0,0,66,0" Text="0" />
+        <TextBox x:Name="df154"  Grid.Column="6"  Grid.Row="10" Grid.ColumnSpan="2" Margin="0,0,66,0" Text="0" />
+        <TextBox x:Name="df155"  Grid.Column="6"  Grid.Row="10" Grid.ColumnSpan="2" Margin="0,37,66,0" Grid.RowSpan="3" Text="0" />
+        <TextBox x:Name="df215"  Grid.Column="7"  Grid.Row="2" Text="0" />
+        <TextBox x:Name="df233"  Grid.Column="7"  Grid.Row="4" Margin="0,0,0,37" Grid.RowSpan="2" Text="0" />
+        <TextBox x:Name="df242"  Grid.Column="7"  Grid.Row="5" Text="0" />
+        <TextBox x:Name="df251"  Grid.Column="7"  Grid.Row="6" Text="0" />
+        <TextBox x:Name="df224"  Grid.Column="7"  Grid.Row="2" Margin="0,37,0,0" Grid.RowSpan="2" Text="0" />
+        <TextBox x:Name="df161"  Grid.Column="7"  Grid.Row="8" Margin="0,0,0,37" Grid.RowSpan="2" Text="0" />
+        <TextBox x:Name="df162"  Grid.Column="7"  Grid.Row="9" Text="0" />
+        <TextBox x:Name="df163"  Grid.Column="7"  Grid.Row="10" Text="0" />
+        <TextBox x:Name="df164"  Grid.Column="7"  Grid.Row="10" Margin="0,37,0,0" Grid.RowSpan="3" Text="0" />
+        <TextBox x:Name="df216"  Grid.Column="7"  Grid.Row="2" Grid.ColumnSpan="2" Margin="66,0,0,0" Text="0" />
+        <TextBox x:Name="df234"  Grid.Column="7"  Grid.Row="4" Grid.ColumnSpan="2" Margin="66,0,0,37" Grid.RowSpan="2" Text="0" />
+        <TextBox x:Name="df243"  Grid.Column="7"  Grid.Row="5" Grid.ColumnSpan="2" Margin="66,0,0,0" Text="0" />
+        <TextBox x:Name="df252"  Grid.Column="7"  Grid.Row="6" Grid.ColumnSpan="2" Margin="66,0,0,0" Text="0" />
+        <TextBox  x:Name="df261" Grid.Column="7"  Grid.Row="6" Grid.ColumnSpan="2" Margin="66,37,0,0" Grid.RowSpan="2" Text="0" />
+        <TextBox  x:Name="df225" Grid.Column="7"  Grid.Row="2" Grid.ColumnSpan="2" Margin="66,37,0,0" Grid.RowSpan="2" Text="0" />
+        <TextBox  x:Name="df171" Grid.Column="7"  Grid.Row="9" Grid.ColumnSpan="2" Margin="66,0,0,0"  Text="0" />
+        <TextBox x:Name="df172"  Grid.Column="7"  Grid.Row="10" Grid.ColumnSpan="2" Margin="66,0,0,0" Text="0" />
+        <TextBox x:Name="df173"  Grid.Column="7"  Grid.Row="10" Grid.ColumnSpan="2" Margin="66,37,0,0" Grid.RowSpan="3" Text="0" />
+        <TextBox x:Name="df217"  Grid.Column="9"  Grid.Row="2" Grid.ColumnSpan="2" Margin="0,0,66,0" Text="0" />
+        <TextBox  x:Name="df235" Grid.Column="9"  Grid.Row="4" Grid.ColumnSpan="2" Margin="0,0,66,37" Grid.RowSpan="2" Text="0" />
+        <TextBox  x:Name="df244" Grid.Column="9"  Grid.Row="5" Grid.ColumnSpan="2" Margin="0,0,66,0" Text="0" />
+        <TextBox  x:Name="df253" Grid.Column="9"  Grid.Row="6" Grid.ColumnSpan="2" Margin="0,0,66,0" Text="0" />
+        <TextBox x:Name="df262"  Grid.Column="9"  Grid.Row="6" Grid.ColumnSpan="2" Margin="0,37,66,0" Grid.RowSpan="2" Text="0" />
+        <TextBox x:Name="df271"  Grid.Column="9"  Grid.Row="8" Grid.ColumnSpan="2" Margin="0,0,66,37" Grid.RowSpan="2"  Text="0" />
+        <TextBox x:Name="df226"  Grid.Column="9"  Grid.Row="2" Grid.ColumnSpan="2" Margin="0,37,66,0" Grid.RowSpan="2" Text="0" />
+        <TextBox x:Name="df181"  Grid.Column="9"  Grid.Row="10" Grid.ColumnSpan="2" Margin="0,0,66,0" Text="0" />
+        <TextBox x:Name="df182"  Grid.Column="9"  Grid.Row="10" Grid.ColumnSpan="2" Margin="0,37,66,0" Grid.RowSpan="3" Text="0" />
+
+        <TextBox x:Name="df7218"  Grid.Column="10"  Grid.Row="2" Text="0" />
+        <TextBox x:Name="df236"  Grid.Column="10"  Grid.Row="4" Margin="0,0,0,37" Grid.RowSpan="2" Text="0" />
+        <TextBox x:Name="df245"  Grid.Column="10"  Grid.Row="5" Text="0" />
+        <TextBox x:Name="df254"  Grid.Column="10"  Grid.Row="6" Text="0" />
+        <TextBox  x:Name="df263" Grid.Column="10"  Grid.Row="6" Margin="0,37,0,0" Grid.RowSpan="2" Text="0" />
+        <TextBox  x:Name="df272" Grid.Column="10"  Grid.Row="8" Margin="0,0,0,37" Grid.RowSpan="2" Text="0" />
+        <TextBox x:Name="df281"  Grid.Column="10"  Grid.Row="9" Text="0" />
+        <TextBox x:Name="df227"  Grid.Column="10"  Grid.Row="2" Margin="0,37,0,0" Grid.RowSpan="2" Text="0" />
+        <TextBox x:Name="df191"  Grid.Column="10"  Grid.Row="10" Margin="0,37,0,0" Grid.RowSpan="3" Text="0" />
+
+        <TextBox x:Name="df219"  Grid.Column="10"  Grid.Row="2" Grid.ColumnSpan="2" Margin="66,0,0,0" Text="0" />
+        <TextBox x:Name="df237"  Grid.Column="10"  Grid.Row="4" Grid.ColumnSpan="2" Margin="66,0,0,37" Grid.RowSpan="2" Text="0" />
+        <TextBox x:Name="df246"  Grid.Column="10"  Grid.Row="5" Grid.ColumnSpan="2" Margin="66,0,0,0" Text="0" />
+        <TextBox x:Name="df255"  Grid.Column="10"  Grid.Row="6" Grid.ColumnSpan="2" Margin="66,0,0,0" Text="0" />
+        <TextBox x:Name="df264"  Grid.Column="10"  Grid.Row="6" Grid.ColumnSpan="2" Margin="66,37,0,0" Grid.RowSpan="2" Text="0" />
+        <TextBox  x:Name="df273" Grid.Column="10"  Grid.Row="8" Grid.ColumnSpan="2" Margin="66,0,0,37" Grid.RowSpan="2" Text="0" />
+        <TextBox  x:Name="df282" Grid.Column="10"  Grid.Row="9" Grid.ColumnSpan="2" Margin="66,0,0,0" Text="0" />
+        <TextBox x:Name="df291"  Grid.Column="10"  Grid.Row="10" Grid.ColumnSpan="2" Margin="66,0,0,0" Text="0" />
+        <TextBox x:Name="df228"  Grid.Column="10"  Grid.Row="3" Grid.ColumnSpan="2" Height="38" Margin="66,0,0,0" VerticalAlignment="Center" Text="0" />
+        <Button Content="Выход" HorizontalAlignment="Center" VerticalAlignment="Center" Click="Button_Click"/>
+
+    </Grid>
+</Page>
